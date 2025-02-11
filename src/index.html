@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeRun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="editor">
+            <h2>CodeRun</h2>
+            <select id="language">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="TypeScript">TypeScript</option>
+            </select>
+            <textarea id="code"></textarea>
+        </div>
+        <div class="output">
+            <h2>Output</h2>
+            <pre id="result"></pre>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>

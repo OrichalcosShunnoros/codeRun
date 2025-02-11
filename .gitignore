@@ -1,0 +1,47 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn.lock
+.pnpm-debug.log*
+
+# Build files
+dist/
+out/
+build/
+release/
+
+# Electron settings
+electron-builder-cache/
+electron-packager-cache/
+*.asar
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+logs/
+*.log
+*.log.*
+*.tmp
+temp/
+.cache/
+
+# Compiled files
+*.pyc
+*.pyo
+*.swp
+
+# VS Code and JetBrains IDEs
+.vscode/
+.idea/
+*.iml
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
