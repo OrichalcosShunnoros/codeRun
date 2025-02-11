@@ -7,8 +7,10 @@ app.whenReady().then(() => {
         width: 900,
         height: 600,
         webPreferences: {
-            nodeIntegration: true,
-            contextIsolation: false,
+            nodeIntegration: false,
+            contextIsolation: true,
+            enableRemoteModule: false,
+            preload: __dirname + "/preload.js",
         },
     });
 
