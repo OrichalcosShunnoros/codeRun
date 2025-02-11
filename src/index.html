@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>CodeRun</h1>
+    
     <div class="container">
-        <div class="editor">
-            <h2>CodeRun</h2>
+        <div class="editor-section">
+            <label for="language">Language:</label>
             <select id="language">
-                <option value="JavaScript">JavaScript</option>
-                <option value="Python">Python</option>
-                <option value="TypeScript">TypeScript</option>
+                <option value="javascript">JavaScript</option>
             </select>
-            <textarea id="code"></textarea>
+            <textarea id="editor"></textarea>
         </div>
-        <div class="output">
+
+        <div class="output-section">
             <h2>Output</h2>
-            <pre id="result"></pre>
+            <pre id="output"></pre>
         </div>
     </div>
-    <script src="renderer.js"></script>
+
+    <script src="render.js"></script>
 </body>
 </html>

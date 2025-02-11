@@ -1,17 +1,33 @@
-const codeInput = document.getElementById("code");
+const editor = document.getElementById("editor");
+const output = document.getElementById("output");
 const languageSelect = document.getElementById("language");
-const resultOutput = document.getElementById("result");
 
-let typingTimer;
-const delay = 500;
+function evaluateCode() {
+    const code = editor.value.trim();
 
-codeInput.addEventListener("input", () => {
-    clearTimeout(typingTimer);
-    typingTimer = setTimeout(() => {
-        window.api.runCode(codeInput.value, languageSelect.value);
-    }, delay);
-});
+    if (!code) {
+        output.innerText = "";
+        return;
+    }
 
-window.api.onOutput((output) => {
-    resultOutput.textContent = output;
-});
+    try {
+        console.clear();
+        output.innerText = "";
+        let logOutput = [];
+
+        const originalConsoleLog = console.log;
+        console.log = (...args) => {
+            logOutput.push(args.join(" "));
+            originalConsoleLog.apply(console, args);
+        };
+
+        new Function(code)();
+
+        output.innerText = logOutput.length ? logOutput.join("\n") : "Execute code without output.";
+        console.log = originalConsoleLog;
+    } catch (error) {
+        output.innerText = `⚠️ Error: ${error.message}`;
+    }
+}
+
+editor.addEventListener("input", evaluateCode);

@@ -3,35 +3,39 @@ body {
   background-color: #1e1e1e;
   color: white;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
 }
 
 .container {
   display: flex;
-  height: 100vh;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-.editor, .output {
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
+.editor-section, .output-section {
+  flex: 1;
+  background-color: #252526;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.editor textarea {
+textarea {
   width: 100%;
-  height: 80%;
-  background: #282c34;
+  height: 300px;
+  background-color: #1e1e1e;
   color: white;
-  border: none;
+  border: 1px solid #ffcc00;
   font-size: 16px;
-  padding: 10px;
 }
 
-.output pre {
-  background: #181a1f;
-  color: #61dafb;
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: black;
   padding: 10px;
-  height: 80%;
-  overflow-y: auto;
+  min-height: 300px;
 }
