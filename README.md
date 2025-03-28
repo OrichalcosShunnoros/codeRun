@@ -39,14 +39,14 @@ start index.html # Windows
 - There may be limitations in running certain Python libraries due to WebAssembly environment restrictions.
 - If the console shows no output, check the loading of `pyodide.js` in the browser console.
 
-## 📸 Screenshots
-![image](https://github.com/user-attachments/assets/1db5d22c-1432-41d7-89de-8aa1f63b0d37)
-![image](https://github.com/user-attachments/assets/eb8a9695-7db2-4bef-a055-5f5466e5f2cb)
+## 📸 Images of project
+![image](https://github.com/user-attachments/assets/d102d515-047e-4806-b085-73f566b1db06)
+
 
 
 
 ---
-📌 **Developed by Christian Zambrano**
+📌 **Developed by Ramdev**
 
 ## ES-lang
 
@@ -89,9 +89,9 @@ start index.html     # Windows
 - Puede haber limitaciones en la ejecución de ciertas bibliotecas de Python debido a las restricciones del entorno WebAssembly.
 - Si la consola no muestra salida, revisa la carga de `pyodide.js` en la consola del navegador.
 
-## 📸 Capturas de Pantalla
-![image](https://github.com/user-attachments/assets/1db5d22c-1432-41d7-89de-8aa1f63b0d37)
-![image](https://github.com/user-attachments/assets/eb8a9695-7db2-4bef-a055-5f5466e5f2cb)
+## 📸 Imágenes del proyecto
+![image](https://github.com/user-attachments/assets/c4a98383-84c9-4981-8e05-8ea030d5244c)
+
 
 ---
-📌 **Desarrollado por Christian Zambrano**
+📌 **Desarrollado por Ramdev**
