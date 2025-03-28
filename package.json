@@ -11,6 +11,10 @@
   "description": "",
   "devDependencies": {
     "electron": "^35.1.2",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }
