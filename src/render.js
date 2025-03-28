@@ -5,14 +5,14 @@ const languageSelect = document.getElementById("language");
 let pyodide;
 
 async function loadPyodideAndPackages() {
-    output.innerText = "Pyodide is loading...";
+    output.innerText = "";
     pyodide = await loadPyodide();
     await pyodide.runPythonAsync(`
         import sys
         from io import StringIO
         sys.stdout = StringIO()
     `);
-    output.innerText = "Python is charged. Now you can write python code.";
+    output.innerText = "";
 }
 
 loadPyodideAndPackages();
